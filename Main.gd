@@ -1,7 +1,7 @@
 extends Node2D
 
-var worldSize=10
-var cells=load("res://Cell2.tscn")
+var worldSize=100
+var cells=load("res://Cell3button.tscn")
 var world=[]
 var workArray=[]
 var spriteWidth=64
