@@ -1,13 +1,14 @@
 extends Node2D
 
-var worldSize=30
-var cells=load("res://Cell.tscn")
+var worldSize=10
+var cells=load("res://Cell2.tscn")
 var world=[]
 var workArray=[]
 var spriteWidth=64
 var spriteHeight=64
 var xSpacing
 var ySpacing
+
 
 func _ready():
 	xSpacing=spriteWidth	#tempSprite.texture.get_size().x
@@ -25,4 +26,4 @@ func _ready():
 			add_child(world[y][x])
 			world[y][x].position.x=x*xSpacing
 			world[y][x].position.y=y*ySpacing
-	
+			world[y][x].id=y+x	

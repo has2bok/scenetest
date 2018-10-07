@@ -10,7 +10,6 @@ extents = Vector2( 30, 30 )
 
 [node name="Cell" type="Area2D"]
 
-editor/display_folded = true
 position = Vector2( 30, 30 )
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
